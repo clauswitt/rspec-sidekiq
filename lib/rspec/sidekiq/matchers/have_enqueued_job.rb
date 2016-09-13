@@ -1,7 +1,7 @@
 module RSpec
   module Sidekiq
     module Matchers
-      def have_enqueued_job(*expected_arguments)
+      def have_enqueued_sidekiq_job(*expected_arguments)
         HaveEnqueuedJob.new expected_arguments
       end
 
